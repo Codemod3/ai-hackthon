@@ -1,0 +1,57 @@
+/* Chatbox Styles */
+.chat-input-section {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.chatbox {
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.chatbox input {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+}
+
+.chatbox .send-btn {
+    background-color: #66bb6a;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.send-btn .material-icons {
+    font-size: 20px;
+}
+
+/* Dark Theme Support for Chatbox */
+.dark-theme .chat-input-section {
+    background-color: #333;
+    border-top: 1px solid #444;
+}
+
+.dark-theme .chatbox input {
+    background-color: #444;
+    color: white;
+}
+
+.dark-theme .send-btn {
+    background-color: #4caf50;
+}
+
+.dark-theme .send-btn .material-icons {
+    color: white;
+}

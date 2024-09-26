@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-left">
+                <h1>My Website</h1>
+            </div>
+            <div class="navbar-right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="signup.html">Signup</a></li>
+                    <li><a href="signin.html">Signin</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                </ul>
+                <div class="theme-toggle">
+                    <label class="switch">
+                        <input type="checkbox" id="theme-switch">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="main-content">
+        <div class="quiz-info">
+            <h2>Welcome to the Quiz Interface</h2>
+            <p>Use the text box below to send a prompt for quiz generation.</p>
+        </div>
+        <!-- Quiz content can be added here -->
+    </section>
+
+    <footer class="chat-input-section">
+        <div class="chatbox">
+            <input type="text" id="quiz-input" placeholder="Enter your prompt here..." />
+            <button class="send-btn" id="send-btn">
+                <span class="material-icons">send</span>
+            </button>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

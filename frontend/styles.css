@@ -1,0 +1,310 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Box changes in dark theme */
+.dark-theme .box {
+    background-color: #444;  /* Dark grey for boxes */
+    color: #fff;  /* White text inside boxes */
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.paper {
+    padding: 20px;
+    height: 80vh;
+    width: 280px;
+    margin: 50px auto;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.center {
+    text-align: center;
+}
+
+.textfield {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.textfield input {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.textfield .icon {
+    margin-right: 8px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: darkred;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divider hr {
+    flex: 1;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+.divider p {
+    padding: 0 10px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+}
+
+.icons .material-icons {
+    margin: 0 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.navbar h1 {
+    font-size: 24px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.theme-toggle {
+    margin-left: 20px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 20px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #66bb6a;
+}
+
+input:checked + .slider:before {
+    transform: translateX(20px);
+}
+
+/* Hero Section */
+.hero img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+/* Main Content */
+.main-content {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.box {
+    background-color: #f4f4f4;
+    padding: 30px;
+    width: 25%;
+    height: 200px; /* Square box height equal to width */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.box h2 {
+    font-size: 24px;
+}
+
+.box p {
+    font-size: 16px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer a {
+    color: #66bb6a;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+/* Chatbox Styles */
+.chat-input-section {
+    position: fixed;
+    bottom: 0; /* Keep it fixed to the bottom */
+    width: 100%;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.chatbox {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the chatbox */
+    max-width: 800px; /* Optional: set a max-width for better control */
+    margin: 0 auto; /* Center the chatbox */
+}
+
+.chatbox input {
+    width: 80%; /* Adjust width as necessary */
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    margin-right: 10px; /* Space between input and send button */
+}
+
+.chatbox .send-btn {
+    background-color: transparent;
+    border: none;
+    color: #66bb6a;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.send-btn .material-icons {
+    font-size: 24px; /* Arrow icon size */
+}
+
+/* Dark Theme Support for Chatbox */
+.dark-theme .chat-input-section {
+    background-color: #333;
+    border-top: 1px solid #444;
+}
+
+.dark-theme .chatbox input {
+    background-color: #444;
+    color: white;
+}
+
+.dark-theme .send-btn {
+    color: #4caf50;
+}
+
+.send-btn img {
+    width: 20px;   /* Set the desired width */
+    height: 20px;  /* Set the desired height */
+    object-fit: contain;  /* Ensures the image keeps its aspect ratio */
+}
+
